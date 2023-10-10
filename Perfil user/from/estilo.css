@@ -1,0 +1,245 @@
+*{
+    margin : 0;
+    border: border-box;
+}
+
+.conteiner{
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-image: url("..//img/from.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+
+}
+
+.header{
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 40vh;
+
+    border-radius: 0px 0px 160px 160px;
+
+    background-image: url("../img/breno.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-bottom: 3px solid #BD00FF;
+}
+
+.img-perfil{
+    position: absolute;
+    z-index: 2;
+    top: 270px;
+    left: 120px;
+    width: 200px;
+    height: 200px;
+
+    border-radius: 100px;
+    border: 7px solid #32013F;
+
+    background-image: url(https://w7.pngwing.com/pngs/81/570/png-transparent-profile-logo-computer-icons-user-user-blue-heroes-logo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.info-user{
+    background-color: transparent;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 15vh;
+}
+
+.nome, .tipo-user{
+    font-size: 2rem ;
+    font-family: LASTICA;
+    font-weight: 600;
+ 
+    color: #fff;
+}
+
+.box-user{
+    margin-right: 16vw;    
+    display: flex;
+    align-items: center;
+
+    p{
+      font-size: 123px;
+      color: #8d0dc0;
+    }
+    
+}
+
+.nome{
+    margin-left: 390px;
+}
+
+button{
+    margin-right: 190px;
+    width: 170px;
+    height: 45px;
+    background-color: #3A014D;
+
+    border: none;
+    cursor: pointer;
+    color: #fff;
+
+    font-family: Montserrat;
+    font-weight: 800;
+    font-size: 1.3rem;
+
+    border-radius: 8px;
+    border-bottom: 2px solid #BD00FF;
+}
+
+.biografia{
+    background-color: #32013F;
+    width: 85%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 12px;
+    border-bottom: 3px solid #BD00FF;
+}
+
+.text-bio{
+    color: #fff;
+    text-align: center;
+    width: 70%;
+
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+header{
+    width: 100%;
+    height: 80px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+
+    justify-content: space-around;
+
+    border-radius: 0px 0px 30px 30px;
+    border: 1px solid rgba(189, 0, 255, 0.95);
+    backdrop-filter: blur(12.5px);
+    background-color: rgba(50, 2, 69, 0.26) ; /* Vermelho com 50% de opacidade apenas exemplo, coloca a cor certa*/ 
+}
+
+.icon-perfil{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 30%;
+    }
+
+    .icon-perfil p{
+        font-size: 36px;
+        color:#ffff;
+        font-family: Montserrat;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: 100%;
+        }
+
+.hacker_img{
+    position: absolute;
+    z-index: 1;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+
+    border-radius: 60px;
+    border: 3px solid #32013F;
+
+    background-image: url(https://icon-library.com/images/hacker-icon/hacker-icon-6.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(255, 255, 255, 0.63) ;
+}
+
+@media screen and (max-width: 390px){
+    header{
+        width: 100%;
+        height: 80px;
+        flex-shrink: 0;
+        display: flex;
+        align-items: center;
+    
+        justify-content: space-around;
+    
+        border-radius: 0px 0px 30px 30px;
+        border: 1px solid rgba(189, 0, 255, 0.95);
+        backdrop-filter: blur(12.5px);
+        background-color: rgba(50, 2, 69, 0.26) ; /* Vermelho com 50% de opacidade apenas exemplo, coloca a cor certa*/ 
+    }
+
+    .icon-button{
+        width: 20px;
+        height: 20px;
+    }   
+
+    .icon-perfil p{
+        font-size: 20px;
+    }
+
+    .icon-pessoa{
+        width: 25px;
+        height: 25px;
+    }
+
+    .hacker_img{
+        width: 40px;
+        height: 40px;
+    }
+
+    .header{
+        height: 30vh;
+        border-radius: 0px 0px 45px 45px;
+    }
+
+    .img-perfil{
+        width: 120px;
+        height: 120px;
+        top: 180px;
+        left: 120px;
+    }
+    
+    .info-user{
+        flex-direction: column;
+        align-items: center;
+        margin-top: 80px;
+        justify-content: flex-start;
+    }
+    .box-user, .nome, .tipo-user{
+        margin: 0px;
+        font-size: 20px;
+    }
+   .ponto, button{
+    display: none;
+   }
+
+   .biografia{
+    height: 15vh;
+   }
+
+   .text-bio{
+    font-size: 1rem;
+   }
+
+}
